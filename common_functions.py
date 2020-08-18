@@ -1,6 +1,6 @@
 def __class_attr_to_str__(_class: object) -> str:
     """
-    return class __init__ attributes and conditions to string
+    return class attributes and conditions to string
 
     :param _class: object
     :return: {class_name} = [{attr}: {attr_data_type}={attr_value}, ...]
