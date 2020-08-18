@@ -17,8 +17,13 @@ class Test:
 
 if __name__ == '__main__':
     test = Test()
+    # Test = [a: int=0, _b: str="0", _Test__c: bool=False]
     print(test)             # print original attr
+
     test.a = 99             # public  attr modification
     test._b = "1"           # protect attr modification
     test._Test__c = True    # private attr modification
+
+    # Test = [a: int=99, _b: str="1", _Test__c: bool=True]
     print(test)             # print modified class
+
