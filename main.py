@@ -8,11 +8,11 @@ class Test:
         self._b: str = "0"
         self._c: bool = False
 
-    def to_string(self):
-        print(print_class_attr(self))
+    def __str__(self):
+        return get_class_attr(self)
 
 
-def print_class_attr(_class) -> str:
+def get_class_attr(_class) -> str:
     """
     return class __init__ attributes name and conditions to string
 
@@ -39,6 +39,5 @@ def print_class_attr(_class) -> str:
 
 if __name__ == '__main__':
     test: Test = Test()
-    test.to_string()
-    test.a = 1
-    test.to_string()
+    test.a = 99
+    print(test)
