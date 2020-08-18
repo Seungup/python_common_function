@@ -1,18 +1,4 @@
-class Test:
-    """
-    Test Class
-    """
-
-    def __init__(self):
-        self.a: int = 0
-        self._b: str = "0"
-        self._c: bool = False
-
-    def __str__(self):
-        return get_class_attr(self)
-
-
-def get_class_attr(_class) -> str:
+def __class_attr_to_str__(_class) -> str:
     """
     return class __init__ attributes name and conditions to string
 
@@ -36,8 +22,3 @@ def get_class_attr(_class) -> str:
 
     return return_value[0:len(return_value) - 2] + "]"
 
-
-if __name__ == '__main__':
-    test: Test = Test()
-    test.a = 99
-    print(test)
